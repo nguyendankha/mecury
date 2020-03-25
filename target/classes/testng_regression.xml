@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Cho Tot - Test Automation Regression Suite">
+
+	<listeners>
+		<listener class-name="com.newtours.retryFailed.MyTransformer"/>
+	</listeners>
+	
+	<test name="Cho Tot - Chrome Test Cases">
+	
+	<parameter name="Browser" value="chrome"/>
+	
+		<classes>
+<!--			<class name="com.newtours.testCases.HomePageTest"></class>-->
+			<class name="com.newtours.testCases.LoginPageTest"></class>
+		</classes>
+		
+	</test>	
+</suite>
